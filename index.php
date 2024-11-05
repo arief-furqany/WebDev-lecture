@@ -93,11 +93,12 @@
     }
     
     .sidebar a:hover{
+        
         background-color: aquamarine;
         backdrop-filter: blur(10px);
         border-radius: 4px;
         box-shadow: 2px 4px 4px #a3a3a3;
-        color: white;
+        color: black;
         -webkit-backdrop-filter: blur(10px);
     }
 
@@ -115,6 +116,7 @@
         
         color: white;
         margin-left: 260px;
+        padding-top: 15px;
     }
 
     /* .footer{
