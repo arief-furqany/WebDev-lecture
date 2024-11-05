@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        form{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px black;
+}
+label{
+    font-weight: normal;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select, textarea {
+    width: 100%;
+    /* margin: 10px; */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-style: 18px;
+    box-sizing: border-box;
+}
+
+.radio-group{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover{
+    background-color: #45a049;
+}
+        
+    </style>
+ 
+ <div class="container">
+    <form action="proses_data.php" method="post">
+        <label for="nama">Nama : </label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="email">Email : </label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="nomor">Telpon : </label>
+        <input type="tel" id="tel" name="tel" required>
+
+        <label for="tanggal">Tanggal : </label>
+        <input type="date" id="date" name="date" required>
+
+        <!-- element selet -->
+        <label for="jenis_kelamin"> jenis kelamin </label>
+        <select name="jenis_kelamin" id="jenis_kelamin" required>
+            <option value="">pilih jenis kelamin : </option>
+            <option value="laki-laki">laki-laki</option>
+            <option value="perempuan"> perempuan</option>
+        </select>
+
+        <!-- element radio grup -->
+        <label>Status : </label>
+        <div class="radio-group">
+
+        <input type="radio" id="pelajar" name="status" value="pelajar">
+        <label for="pelajar"> Pelajar </label>
+        
+        <input type="radio" id="mahasiswa" name="status" value="mahasiswa">
+        <label for="mahasiswa"> mahasiswa </label>
+        
+        <input type="radio" id="pekerja" name="status" value="pekerja">
+        <label for="pekerja"> pekerja </label> 
+        </div>
+
+        <!-- element text area -->
+        <label for="pesan">pesan dan komentar</label>
+        <textarea name="pesan" id="pesan" rows="4" placeholder="tuliskan masukan anda"></textarea>
+         
+
+    <button type="submit">Kirim</button>
+
+</body>
+</html>
