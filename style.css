@@ -1,0 +1,40 @@
+form{
+    min-width: 400px;
+    margin: 15;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 3px solid darkgoldenrod;
+    border-radius: 5px;
+}
+
+label{
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    bottom: solid #ccc;
+    border-radius: 4px;
+}
+
+button{
+    width: 100px; 
+    padding: 10px;
+    background-color: #000000;
+    color: rgb(0, 255, 76);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: #45a049;
+}
